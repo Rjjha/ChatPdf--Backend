@@ -319,3 +319,37 @@ curl -X 'POST' \
   ]
 }
 ```
+### 6. Query History
+
+**GET** `/api/v1/history/{pdf_id}`
+
+**Description:**  
+Retrieves the query history for a specific PDF.
+
+**Parameters:**  
+- `pdf_id` (string, path) - The ID of the PDF.  
+- `skip` (integer, query) - Offset for pagination (default: 0).  
+- `limit` (integer, query) - Number of records to fetch (default: 10).  
+
+**Responses:**  
+- **200 OK:**  
+  - **Description:** Successfully retrieves the query history.  
+  - **Response Body:**  
+    ```json
+    [
+      {
+        "id": "6738587ac013d1176861687f",
+        "pdf_id": "67385818c013d1176861687e",
+        "query": "what is the topic?",
+        "response": "Open source software development",
+        "created_at": "2024-11-16T08:31:54.333289"
+      },
+      {
+        "id": "67375818c013d1176861688a",
+        "pdf_id": "67385818c013d1176861687e",
+        "query": "Who contributed to the document?",
+        "response": "John Doe and Jane Smith",
+        "created_at": "2024-11-16T09:10:23.123456"
+      }
+    ]
+    ```
