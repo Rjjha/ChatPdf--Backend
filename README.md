@@ -1,12 +1,11 @@
-```markdown
 # Backend Setup Guide
 
 Follow these steps to set up and run the backend for your project.
 
 ## Prerequisites
 
-- **Python 3.7+** installed
-- **pip** (Python package installer)
+- Python 3.7+ installed
+- pip (Python package installer)
 
 ---
 
@@ -58,8 +57,6 @@ Follow these steps to set up and run the backend for your project.
   ```bash
   deactivate
   ```
-```
-
 
 # API Documentation
 
