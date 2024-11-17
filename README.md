@@ -1,3 +1,66 @@
+```markdown
+# Backend Setup Guide
+
+Follow these steps to set up and run the backend for your project.
+
+## Prerequisites
+
+- **Python 3.7+** installed
+- **pip** (Python package installer)
+
+---
+
+## Steps to Start
+
+1. **Install `virtualenv`**  
+   ```bash
+   pip install virtualenv
+   ```
+
+2. **Create a Virtual Environment**  
+   ```bash
+   python3 -m venv venv
+   ```
+
+3. **Activate the Virtual Environment**  
+   - **Linux/macOS**:  
+     ```bash
+     source venv/bin/activate
+     ```
+   - **Windows**:  
+     ```bash
+     venv\Scripts\activate
+     ```
+
+4. **Install Dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Run the Backend Server**  
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+---
+
+## Access the Application
+
+- Open your browser and go to:  
+  `http://127.0.0.1:8000`
+
+---
+
+## Notes
+
+- Use `CTRL+C` to stop the server.
+- To deactivate the virtual environment, run:  
+  ```bash
+  deactivate
+  ```
+```
+
+
 # API Documentation
 
 ## 1. Root Endpoint
